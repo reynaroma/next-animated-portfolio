@@ -1,7 +1,7 @@
 const PortfolioPage = () => {
   return (
     <div>
-      About Page
+      Portfolio Page
     </div>
   );
 };
