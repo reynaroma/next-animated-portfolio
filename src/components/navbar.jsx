@@ -16,6 +16,36 @@ const links = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const topVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: 'rgb(255, 255, 255)'
+    }
+  }
+
+  const centerVariants = {
+    closed: {
+      opacity: 1,
+    },
+    opened: {
+      opacity: 0,
+    }
+  }
+
+
+  const bottomVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: -45,
+      backgroundColor: 'rgb(255, 255, 255)'
+    }
+  }
+
   return (
     <div className="h-full flex items-center justify-between
     px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
@@ -60,9 +90,18 @@ const Navbar = () => {
           // Toggle the open state
           //onClick={() => setOpen(!open)}
           onClick={() => setOpen((prev) => !prev)}>
-          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
-          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
-          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
+          <motion.div
+            className="w-10 h-1 bg-black rounded origin-left"
+            variants={topVariants}
+            animate={open ? "opened" : "closed"}></motion.div>
+          <motion.div
+            className="w-10 h-1 bg-black rounded"
+            variants={centerVariants}
+            animate={open ? "opened" : "closed"}></motion.div>
+          <motion.div
+            className="w-10 h-1 bg-black rounded origin-left"
+            variants={bottomVariants}
+            animate={open ? "opened" : "closed"}></motion.div>
         </button>
         {/* MENU LIST */}
         {open && (
