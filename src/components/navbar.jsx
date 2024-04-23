@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import NavLink from "./navLink";
+import { motion } from "framer-motion";
 
 const links = [
   { url: "/", title: "Home" },
@@ -59,9 +60,9 @@ const Navbar = () => {
           // Toggle the open state
           //onClick={() => setOpen(!open)}
           onClick={() => setOpen((prev) => !prev)}>
-          <div className="w-10 h-1 bg-white rounded"></div>
-          <div className="w-10 h-1 bg-white rounded"></div>
-          <div className="w-10 h-1 bg-white rounded"></div>
+          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
+          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
+          <motion.div className="w-10 h-1 bg-black rounded"></motion.div>
         </button>
         {/* MENU LIST */}
         {open && (
