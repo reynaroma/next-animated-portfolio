@@ -32,8 +32,17 @@ const Navbar = () => {
         </Link>
       </div>
       <div>
-        <Link href="#reynaroma">
+        <Link href="https://github.com/reynaroma">
           <Image src="/github.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/reyna-may-roma/">
+          <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://www.facebook.com/littleraaaain/">
+          <Image src="/facebook.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://www.instagram.com/littleraaaaain/">
+          <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
       </div>
       {/* Responsive Menu*/}
