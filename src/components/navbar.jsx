@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between
     px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* Logo */}
-      <div className="">
+      <div className="md:hidden">
         <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold
         flex items-center justify-center">
           <span className="text-white mr-1">Reyna</span>
@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* Responsive Menu*/}
-      <div className="">
+      <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
