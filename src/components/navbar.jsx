@@ -47,6 +47,9 @@ const Navbar = () => {
         <Link href="https://www.instagram.com/littleraaaaain/">
           <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
+        <Link href="https://flowcv.com/resume/eldhilr8bi/">
+          <Image src="/flowcv.png" alt="" width={24} height={24} />
+        </Link>
       </div>
       {/* Responsive Menu*/}
       <div className="md:hidden">
