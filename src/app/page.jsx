@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 relative">
         <Image
@@ -10,19 +10,19 @@ const Homepage = () => {
           className="object-contain" />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2">
+      <div className="h-1/2 flex flex-col gap-8 items-center justify-center">
         {/* TITLE */}
-        <h1>Crafting Digital Experiences, Designing Tomorrow</h1>
+        <h1 className="text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow</h1>
         {/* SUBTITLE */}
-        <p>Welcome to my digital canvas, where innovation and creativity converge.
+        <p className="">Welcome to my digital canvas, where innovation and creativity converge.
           With a keen aye for aeesthetics and a passion for technology and a mastery of code,
           my portfolio showcases a diverse collection of projects that reflect my commitment
           to excellence.
         </p>
         {/* BUTTONS */}
-        <div>
-          <button>View My Work</button>
-          <button>Contact Me</button>
+        <div className="flex gap-4">
+          <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
+          <button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button>
         </div>
       </div>
 
