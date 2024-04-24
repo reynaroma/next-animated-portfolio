@@ -9,6 +9,7 @@ const AboutPage = () => {
   // useScroll to get the scrollYProgress
   // and apply it to the motion.div
   const { scrollYProgress } = useScroll({ container: containerRef });
+  // useRef to check if the skillRef is in view
   const skillRef = useRef();
   const isSkillRefInView = useInView(skillRef);
   return (
@@ -65,7 +66,12 @@ const AboutPage = () => {
           {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILLS TITLE */}
-            <h1 className="font-bold text-2xl">SKILLS</h1>
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }} // Add a valid transition object
+              className="font-bold text-2xl">SKILLS</motion.h1>
+
             {/* SKILLS LIST */}
             <div className="flex gap-4 flex-wrap">
               <div
