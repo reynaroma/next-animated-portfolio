@@ -164,7 +164,7 @@ const AboutPage = () => {
           {/* EXPERIENCE CONTAINER */}
           <div
             ref={experienceRef}
-            className="flex flex-col gap-12 justify-center">
+            className="flex flex-col gap-12 justify-center pb-48">
             {/* EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
