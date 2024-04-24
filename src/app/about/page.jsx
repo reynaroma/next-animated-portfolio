@@ -10,7 +10,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="">
+      <div className="h-full overflow-scroll">
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48
         flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
@@ -140,6 +140,40 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* EXPERIENCE TITLE */}
             <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+            {/* EXPERIENCE LIST */}
+            <div className="">
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+
+                {/* LEFT */}
+                <div className="w-1/3">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold 
+                  rounded-b-lg rounded-s-lg">Web Developer</div>
+                  {/* JOB DESCRIPTION */}
+                  <div className="p-2 text-sm italic">My current employment</div>
+                  {/* JOB DATE  */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">Nov 2023 - Feb 2024</div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Free Periods Canada</div>
+                </div>
+
+                {/* CENTER */}
+                <div className="w-1/6 bg-red-600">
+                  {/* LINE */}
+                  <div className="">
+                    {/* LINE CIRCLE */}
+                    <div className=""></div>
+                  </div>
+                </div>
+
+                {/* RIGHT  */}
+                <div className="w-1/3">
+
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
