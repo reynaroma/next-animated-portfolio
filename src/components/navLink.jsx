@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 const NavLink = ({ link }) => {
   // Get the current path
   const pathName = usePathname();
-  console.log(pathName);
 
   return (
     <Link
