@@ -1,6 +1,6 @@
 "use client"
 import Brain from "@/components/brain";
-import { motion, useScroll } from "framer-motion";
+import { motion, useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 
 const AboutPage = () => {
@@ -9,7 +9,8 @@ const AboutPage = () => {
   // useScroll to get the scrollYProgress
   // and apply it to the motion.div
   const { scrollYProgress } = useScroll({ container: containerRef });
-  console.log(scrollYProgress);
+  const skillRef = useRef();
+  const isSkillRefInView = useInView(skillRef);
   return (
     <motion.div
       className="h-full"
@@ -62,7 +63,7 @@ const AboutPage = () => {
             </svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILLS TITLE */}
             <h1 className="font-bold text-2xl">SKILLS</h1>
             {/* SKILLS LIST */}
