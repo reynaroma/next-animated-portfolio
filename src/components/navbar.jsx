@@ -52,6 +52,20 @@ const Navbar = () => {
     },
     opened: {
       x: 0,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    }
+  }
+
+  const listItemVariants = {
+    closed: {
+      x: -10,
+      opacity: 0,
+    },
+    opened: {
+      x: 0,
+      opacity: 1,
     }
   }
 
@@ -123,7 +137,12 @@ const Navbar = () => {
             animate={open ? "opened" : "closed"}
           >
             {links.map((link) => (
-              <Link key={link.title} href={link.url}>{link.title}</Link>
+              <motion.div
+                variants={listItemVariants}
+                className=""
+                key={link.title}>
+                <Link key={link.title} href={link.url}>{link.title}</Link>
+              </motion.div>
             ))}
           </motion.div>)
         }
