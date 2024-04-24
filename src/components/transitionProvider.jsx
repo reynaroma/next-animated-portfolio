@@ -9,7 +9,7 @@ const TransitionProvider = ({ children }) => {
 
   return (
     <AnimatePresence mode="wait">
-      <div key={pathName}
+      <div key={pathName.substring(1)}
         className="w-screen h-screen bg-gradient-to-b
          from-blue-100 to-red-100">
         {/* Animated Screen before switching other pages */}
