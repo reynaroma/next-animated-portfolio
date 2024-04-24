@@ -53,6 +53,8 @@ const Navbar = () => {
     opened: {
       x: 0,
       transition: {
+        // delay children
+        when: "beforeChildren",
         staggerChildren: 0.2,
       },
     }
