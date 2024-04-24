@@ -159,11 +159,12 @@ const AboutPage = () => {
                 </div>
 
                 {/* CENTER */}
-                <div className="w-1/6 bg-red-600">
+                <div className="w-1/6">
                   {/* LINE */}
-                  <div className="">
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className=""></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 
+                    ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
 
