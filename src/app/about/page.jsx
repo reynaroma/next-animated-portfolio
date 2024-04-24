@@ -64,39 +64,55 @@ const AboutPage = () => {
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">ReactJS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">NextJS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">Tailwind CSS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">HTML
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">SCSS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">PostgreSQL
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">NodeJS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">ExpressJS
               </div>
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
-                hover:bg-white hover:text-black">JavaScript
+                hover:bg-white hover:text-black">Framer Motion
+              </div>
+              <div
+                className="rounded p-2 text-sm cursor-pointer bg-black text-white
+                hover:bg-white hover:text-black">Webflow
+              </div>
+              <div
+                className="rounded p-2 text-sm cursor-pointer bg-black text-white
+                hover:bg-white hover:text-black">Power Apps
+              </div>
+              <div
+                className="rounded p-2 text-sm cursor-pointer bg-black text-white
+                hover:bg-white hover:text-black">Microsoft Dynamics 365
+              </div>
+              <div
+                className="rounded p-2 text-sm cursor-pointer bg-black text-white
+                hover:bg-white hover:text-black">CMS
               </div>
             </div>
             {/* SKILLS SCROLL SVG */}
