@@ -11,7 +11,7 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
   // useRef to check if the skillRef is in view
   const skillRef = useRef();
-  const isSkillRefInView = useInView(skillRef);
+  const isSkillRefInView = useInView(skillRef, { once: true });
   return (
     <motion.div
       className="h-full"
@@ -64,7 +64,9 @@ const AboutPage = () => {
             </svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div
+            className="flex flex-col gap-12 justify-center"
+            ref={skillRef}>
             {/* SKILLS TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
