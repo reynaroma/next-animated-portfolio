@@ -46,6 +46,15 @@ const Navbar = () => {
     }
   }
 
+  const listVariants = {
+    closed: {
+      x: "100vw"
+    },
+    opened: {
+      x: 0,
+    }
+  }
+
   return (
     <div className="h-full flex items-center justify-between
     px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
@@ -105,12 +114,18 @@ const Navbar = () => {
         </button>
         {/* MENU LIST */}
         {open && (
-          <div className="absolute top-0 left-0 w-screen h-screen bg-black
-         text-white flex flex-col items-center justify-center gap-8 text-4xl">
+          <motion.div
+            className="absolute top-0 left-0 w-screen h-screen bg-black
+         text-white flex flex-col items-center justify-center gap-8
+          text-4xl z-40"
+            variants={listVariants}
+            initial="closed"
+            animate={open ? "opened" : "closed"}
+          >
             {links.map((link) => (
               <Link key={link.title} href={link.url}>{link.title}</Link>
             ))}
-          </div>)
+          </motion.div>)
         }
       </div>
     </div >
