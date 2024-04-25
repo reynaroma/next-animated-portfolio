@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { items } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 const PortfolioPage = () => {
   // Create a reference to the element we want to animate
@@ -20,19 +21,26 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div
-        className="h-[600vh]"
+        className="h-[600vh] relative"
         ref={ref}>
-        <div className="relative w-screen h-[calc(100vh-6rem)]
+        <div className="w-screen h-[calc(100vh-6rem)]
           flex items-center justify-center text-8xl text-center">My Works</div>
       </div>
       <div className="sticky top-0 flex h-screen gap-4 items-center">
         {items.map((item) => (
-          <div className="" key={item.id}>
-            <div className="">
+          <div
+            className={`h-screen w-screen flex items-center
+            justify-center bg-gradient-to-r ${item.color}`}
+            key={item.id}>
+            <div className="flex flex-col gap-8 text-white">
               <h1 className="">{item.title}</h1>
               <div className="relative">
                 <Image src={item.img} alt={item.title} fill />
               </div>
+              <p className="">{item.desc}</p>
+              <Link href={item.link}>
+                <button>See Demo</button>
+              </Link>
             </div>
           </div>
         ))}
