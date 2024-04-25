@@ -46,7 +46,10 @@ const AboutPage = () => {
               </svg>
             </div>
             {/* SKILLS SCROLL SVG */}
-            <svg
+            <motion.svg
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: 1, y: 10 }}
+              transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +67,7 @@ const AboutPage = () => {
                 stroke="#000000"
                 strokeWidth="1"
               ></path>
-            </svg>
+            </motion.svg>
           </div>
           {/* SKILLS CONTAINER */}
           <div
@@ -141,7 +144,10 @@ const AboutPage = () => {
               </div>
             </motion.div>
             {/* SKILLS SCROLL SVG */}
-            <svg
+            <motion.svg
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: 1, y: 10 }}
+              transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +165,7 @@ const AboutPage = () => {
                 stroke="#000000"
                 strokeWidth="1"
               ></path>
-            </svg>
+            </motion.svg>
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
