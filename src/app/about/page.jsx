@@ -27,18 +27,20 @@ const AboutPage = () => {
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48
         flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64
-        lg:w-2/3 lg:pr-0 xl:1/2">
+        lg:w-2/3 lg:pr-0 xl:1/2 ">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center
+          font-light">
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="text-white md:text-[60px] sm:text-[50px] 
+            xs:text-[40px] text-[30px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-purple-500">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">Hi there! I am Reyna May A. Roma, living in Moose Jaw, Saskatchewan, Canada.
-            I am all about creating awesome websites and web applications that look great and work even better.
-            I finished up my bootcamp training back in September 2023, and ever since then, I have been diving
-            headfirst into the world of web development. I am super passionate about what I do, and I love
-            bringing ideas to life through code even it stressed us a lot haha so when I am not busy coding, you
-            can find me in Moose Jaw and say Hi to me. I am always up for a chat about all things.</p>
+              I am all about creating awesome websites and web applications that look great and work even better.
+              I finished up my bootcamp training back in September 2023, and ever since then, I have been diving
+              headfirst into the world of web development. I am super passionate about what I do, and I love
+              bringing ideas to life through code even it stressed us a lot haha so when I am not busy coding, you
+              can find me in Moose Jaw and say Hi to me. I am always up for a chat about all things.</p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">Front-End Developer/ Webflow Developer / Power Apps Developer</span>
             {/* SVG CONTAINER */}
