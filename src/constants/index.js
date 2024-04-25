@@ -33,4 +33,4 @@ const items = [
   },
 ];
 
-export default items;
+export { items };

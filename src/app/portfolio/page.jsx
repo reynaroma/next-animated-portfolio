@@ -1,6 +1,7 @@
 "use client"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { items } from "@/constants";
 
 const PortfolioPage = () => {
   // Create a reference to the element we want to animate
@@ -24,7 +25,9 @@ const PortfolioPage = () => {
           flex items-center justify-center text-8xl text-center">My Works</div>
       </div>
       <div className="sticky top-0 flex h-screen gap-4 items-center">
-        
+        {items.map((item) => (
+          <div className="" key={item.id}></div>
+        ))}
       </div>
     </motion.div>
   );
