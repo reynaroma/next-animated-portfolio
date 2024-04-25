@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { items } from "@/constants";
+import Image from "next/image";
 
 const PortfolioPage = () => {
   // Create a reference to the element we want to animate
@@ -26,7 +27,14 @@ const PortfolioPage = () => {
       </div>
       <div className="sticky top-0 flex h-screen gap-4 items-center">
         {items.map((item) => (
-          <div className="" key={item.id}></div>
+          <div className="" key={item.id}>
+            <div className="">
+              <h1 className="">{item.title}</h1>
+              <div className="relative">
+                <Image src={item.img} alt={item.title} fill />
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </motion.div>
