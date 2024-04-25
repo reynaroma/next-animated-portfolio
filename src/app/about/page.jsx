@@ -33,12 +33,14 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
-            <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quae neque repellat nesciunt excepturi doloribus sapiente dolores non nam,
-              labore earum corrupti maxime obcaecati ad maiores,
-              minus amet libero deserunt blanditiis.</p>
+            <p className="text-lg">Hi there! I am Reyna May A. Roma, living in Moose Jaw, Saskatchewan, Canada.
+            I am all about creating awesome websites and web applications that look great and work even better.
+            I finished up my bootcamp training back in September 2023, and ever since then, I have been diving
+            headfirst into the world of web development. I am super passionate about what I do, and I love
+            bringing ideas to life through code even it stressed us a lot haha so when I am not busy coding, you
+            can find me in Moose Jaw and say Hi to me. I am always up for a chat about all things.</p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <span className="italic">Front-End Developer/ Webflow Developer / Power Apps Developer</span>
             {/* SVG CONTAINER */}
             <div className="self-end">
               <svg width="185" height="77" viewBox="0 0 370 114" fill="none" xmlns="http://www.w3.org/2000/svg">
