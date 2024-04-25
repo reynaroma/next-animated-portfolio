@@ -32,7 +32,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center
           font-light">
             {/* BIOGRAPHY TITLE */}
-            <h1 className="text-white md:text-[60px] sm:text-[50px] 
+            <h1 className="md:text-[60px] sm:text-[50px] 
             xs:text-[40px] text-[30px] font-bold bg-clip-text text-transparent 
             bg-gradient-to-r from-stone-500 to-stone-700 ">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
