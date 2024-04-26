@@ -17,7 +17,7 @@ const ContactPage = () => {
         px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2">
-          <motion.div>{text.split("").map((letter, index) => (
+          <div>{text.split("").map((letter, index) => (
             <motion.span
               key={index}
               initial={{ opacity: 1 }}
@@ -30,7 +30,7 @@ const ContactPage = () => {
                 }
               }
             >{letter}</motion.span>
-          ))}</motion.div>
+          ))}😊</div>
         </div>
         {/* FORM CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2"></div>
