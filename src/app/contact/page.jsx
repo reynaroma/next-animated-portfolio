@@ -34,14 +34,21 @@ const ContactPage = () => {
           ))}😊</div>
         </div>
         {/* FORM CONTAINER */}
-        <form className="h-1/2 lg:h-full lg:w-1/2">
+        <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl
+        text-xl flex flex-col gap-8 justify-center p-24">
           <span>Dear Reyna Dev,</span>
-          <textarea rows={6} />
-          <span>Dear Reyna Dev,</span>
+          <textarea
+            rows={6}
+            className="bg-transparent border-b-2 border-b-black
+            outline-none resize-none" />
           <span>My e-mail address is:</span>
-          <input type="text" />
+          <input
+            type="text"
+            className="bg-transparent border-b-2 border-b-black
+          outline-none" />
           <span>Regards</span>
-          <button>Send</button>
+          <button className="bg-purple-200 rounded font-semibold
+          text-gray-600 p-4">Send</button>
 
         </form>
       </div>
