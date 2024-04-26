@@ -33,7 +33,7 @@ const PortfolioPage = () => {
             style={{ x }}
             className="flex">
             <div className='h-screen w-screen flex items-center
-            justify-center bg-gradient-to-r from-purple-300 to-red-300' />
+            justify-center bg-black'/>
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center
@@ -44,7 +44,10 @@ const PortfolioPage = () => {
                    lg:text-6xl xl:text-8xl">{item.title}</h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64
                   lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt={item.title} fill />
+                    <Image
+                      src={item.img} alt={item.title}
+                      fill priority
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                   <Link
