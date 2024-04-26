@@ -34,7 +34,16 @@ const ContactPage = () => {
           ))}😊</div>
         </div>
         {/* FORM CONTAINER */}
-        <form className="h-1/2 lg:h-full lg:w-1/2"></form>
+        <form className="h-1/2 lg:h-full lg:w-1/2">
+          <span>Dear Reyna Dev,</span>
+          <textarea rows={6} />
+          <span>Dear Reyna Dev,</span>
+          <span>My e-mail address is:</span>
+          <input type="text" />
+          <span>Regards</span>
+          <button>Send</button>
+
+        </form>
       </div>
     </motion.div>
   );
