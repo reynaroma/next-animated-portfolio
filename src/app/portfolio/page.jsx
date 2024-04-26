@@ -37,16 +37,22 @@ const PortfolioPage = () => {
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center
-            justify-center bg-gradient-to-r ${item.color}`}
+            justify-center bg-black`}
                 key={item.id}>
                 <div className="flex flex-col gap-8 text-white">
-                  <h1 className="">{item.title}</h1>
-                  <div className="relative">
+                  <h1 className="text-xl font-bold md:text-4xl
+                   lg:text-6xl xl:text-8xl">{item.title}</h1>
+                  <div className="relative w-80 h-56 md:w-96 md:h-64
+                  lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt={item.title} fill />
                   </div>
-                  <p className="">{item.desc}</p>
-                  <Link href={item.link}>
-                    <button>See Demo</button>
+                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
+                  <Link
+                    className="flex justify-end"
+                    href={item.link}>
+                    <button
+                      className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white
+                      text-gray-600 font-semibold rounded">See Demo</button>
                   </Link>
                 </div>
               </div>
@@ -76,7 +82,7 @@ const PortfolioPage = () => {
               <textPath
                 xlinkHref="#circlePath"
                 className="text-xl">
-                Web Developer Software Developer</textPath>
+                Web Developer & Software Developer</textPath>
             </text>
           </motion.svg>
           <Link
