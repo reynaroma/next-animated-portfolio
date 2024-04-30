@@ -43,9 +43,11 @@ const ContactPage = () => {
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black
-            outline-none resize-none" />
+            outline-none resize-none"
+            name="user_message" />
           <span>My e-mail address is:</span>
           <input
+            name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black
           outline-none" />
