@@ -12,16 +12,21 @@ const ContactPage = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault(process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-      publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-    })
+    e.preventDefault(); // Prevent default form submission
+    setSuccess(false); // Reset success message
+    setError(false); // Reset error message
+    emailjs
+      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
+        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      })
       .then(
         () => {
-          console.log('SUCCESS!');
+          setSuccess(true); // Show success message
+          form.current.reset(); // Reset form
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          setError(true); //  Show error message
         },
       );
 
