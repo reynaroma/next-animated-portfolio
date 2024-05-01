@@ -52,4 +52,4 @@ const services = [
   },
 ];
 
-export { items };
+export { items, services };
