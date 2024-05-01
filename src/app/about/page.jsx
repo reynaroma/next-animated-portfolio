@@ -82,7 +82,9 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl">SKILLS</motion.h1>
+              className="md:text-[60px] sm:text-[50px] 
+              xs:text-[40px] text-[30px] font-bold bg-clip-text text-transparent 
+              bg-gradient-to-r from-stone-500 to-stone-700">SKILLS</motion.h1>
 
             {/* SKILLS LIST */}
             <motion.div
@@ -180,7 +182,9 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl">EXPERIENCE</motion.h1>
+              className="md:text-[60px] sm:text-[50px] 
+              xs:text-[40px] text-[30px] font-bold bg-clip-text text-transparent 
+              bg-gradient-to-r from-stone-500 to-stone-700">EXPERIENCE</motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
