@@ -212,7 +212,8 @@ const AboutPage = () => {
                   {/* JOB DATE  */}
                   <div className="p-3 text-red-400 text-sm font-semibold">Nov 2023 - Feb 2024</div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Free Periods Canada</div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit
+                  bg-clip-text text-transparent bg-gradient-to-r from-stone-500 to-stone-700">Free Periods Canada</div>
                 </div>
 
                 {/* CENTER */}
@@ -251,11 +252,20 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold 
                   rounded-b-lg rounded-s-lg">Application Development Associate</div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-2 text-sm italic">My current employment</div>
+                  <div className="p-2 text-sm italic"><ul className="list-disc">
+                    <li className="text-[14px] pl-1 tracking-wider">
+                      Successfully configured Dynamics 365 CRM components encompassing marketing,
+                      sales, and customer service functionalities.
+                    </li>
+                    <li className="text-[14px] pl-1 tracking-wider">
+                      Designed captivating web applications using PowerApps, Canvas, and model-driven apps
+                    </li>
+                  </ul></div>
                   {/* JOB DATE  */}
                   <div className="p-3 text-red-400 text-sm font-semibold">2021-2022</div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Accenture Inc.</div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit
+                  bg-clip-text text-transparent bg-gradient-to-r from-stone-500 to-stone-700">Accenture Inc.</div>
                 </div>
 
               </div>
