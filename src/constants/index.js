@@ -13,7 +13,7 @@ const items = [
     title: "NextJS: Animated Portfolio",
     desc: "My personal portfolio website built with Next.js and hosted on Vercel. This app showcases my projects and skills learning animations and transitions with Framer Motion.",
     img: "/NextJS-Portfolio.png",
-    link: "https://lama.dev",
+    link: "https://next-animated-portfolio-reynaroma.vercel.app/portfolio",
   },
   {
     id: 3,
