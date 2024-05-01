@@ -70,7 +70,7 @@ const ContactPage = () => {
         text-xl flex flex-col gap-8 justify-center p-24">
           <span>Dear Reyna Dev,</span>
           <textarea
-            rows={6}
+            rows={3}
             className="bg-transparent border-b-2 border-b-black
             outline-none resize-none"
             name="user_message"
