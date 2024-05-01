@@ -88,7 +88,7 @@ const AboutPage = () => {
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              // transition={{ delay: 0.2 }}
               className="flex gap-4 flex-wrap">
               <div
                 className="rounded p-2 text-sm cursor-pointer bg-black text-white
@@ -195,7 +195,16 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold 
                   rounded-b-lg rounded-s-lg">Web Developer</div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-2 text-sm italic">My current employment</div>
+                  <div className="p-2 text-sm italic">
+                    <ul className="list-disc">
+                      <li className="text-[14px] pl-1 tracking-wider">
+                        Developed and maintained the company website using Webflow.
+                      </li>
+                      <li className="text-[14px] pl-1 tracking-wider">
+                        Implementing responsive design and ensuring cross-browser compatibility.
+                      </li>
+                    </ul>
+                  </div>
                   {/* JOB DATE  */}
                   <div className="p-3 text-red-400 text-sm font-semibold">Nov 2023 - Feb 2024</div>
                   {/* JOB COMPANY */}
