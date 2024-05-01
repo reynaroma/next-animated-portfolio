@@ -202,7 +202,7 @@ const AboutPage = () => {
                   <div className="p-2 text-sm italic">
                     <ul className="list-disc">
                       <li className="text-[14px] pl-1 tracking-wider">
-                        Developed and maintained the company website using Webflow.
+                        Developed and maintained the company&lsquo;s existing website using Webflow.
                       </li>
                       <li className="text-[14px] pl-1 tracking-wider">
                         Implementing responsive design and ensuring cross-browser compatibility.
