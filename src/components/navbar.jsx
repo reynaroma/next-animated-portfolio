@@ -143,7 +143,7 @@ const Navbar = () => {
                 variants={listItemVariants}
                 className=""
                 key={link.title}>
-                <Link key={link.title} href={link.url}>{link.title}</Link>
+                <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
           </motion.div>)
