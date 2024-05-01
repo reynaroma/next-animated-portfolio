@@ -33,4 +33,23 @@ const items = [
   },
 ];
 
+const services = [
+  {
+    title: "Web Developer",
+    icon: "/web.png",
+  },
+  {
+    title: "Webflow Developer",
+    icon: "/mobile.png",
+  },
+  {
+    title: "Backend Developer",
+    icon: "/backend.png",
+  },
+  {
+    title: "React Developer",
+    icon: "/creator.png",
+  },
+];
+
 export { items };
