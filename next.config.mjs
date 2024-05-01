@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        loader: 'custom',
+        loaderFile: './loader.js',
         protocol: "https",
         hostname: "images.pexels.com",
         port: "",
