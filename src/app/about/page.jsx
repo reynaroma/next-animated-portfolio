@@ -265,7 +265,7 @@ const AboutPage = () => {
                   <div className="p-3 text-red-400 text-sm font-semibold">2021-2022</div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit
-                  bg-clip-text text-transparent bg-gradient-to-r from-stone-500 to-stone-700">Accenture Inc.</div>
+                  bg-clip-text text-transparent bg-gradient-to-r from-stone-500 to-stone-700">Accenture Inc. PH</div>
                 </div>
 
               </div>
