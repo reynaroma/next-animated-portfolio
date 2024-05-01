@@ -15,7 +15,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="/hero.png" alt="" fill
+            src="/images/Astronaut.png" alt="" fill
             className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
@@ -23,10 +23,9 @@ const Homepage = () => {
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">Crafting Digital Experiences, Designing Tomorrow</h1>
           {/* SUBTITLE */}
-          <p className="md:text-xl">Welcome to my digital canvas, where innovation and creativity converge.
-            With a keen aye for aeesthetics and a passion for technology and a mastery of code,
-            my portfolio showcases a diverse collection of projects that reflect my commitment
-            to excellence.
+          <p className="md:text-xl">Welcome to my digital canvas, I am a Software
+          Developer based in Saskatchewan, Canada. I develop user interfaces and
+          web applications.
           </p>
           {/* BUTTONS */}
           <div className="flex gap-4 w-full">
