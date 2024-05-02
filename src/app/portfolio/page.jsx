@@ -25,8 +25,8 @@ const PortfolioPage = () => {
       <div
         className="h-[600vh] relative"
         ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)]
-          flex items-center justify-center text-8xl text-center">My Works</div>
+        <div className="w-screen h-[calc(100vh-6rem)] lg:text-8xl
+          flex items-center justify-center text-6xl text-center">My Works</div>
         <div className="sticky top-0 flex h-screen gap-4 items-center
       overflow-hidden">
           <motion.div
@@ -67,7 +67,7 @@ const PortfolioPage = () => {
       </div>
       <div className="w-screen h-screen flex flex-col gap-16
           items-center justify-center text-center">
-        <h1 className="text-8xl">
+        <h1 className="text-6xl lg:text-8xl md:text-6xl sm:text-4xl">
           Do you have a project?
         </h1>
         <div className="relative">
