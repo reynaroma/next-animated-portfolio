@@ -21,6 +21,7 @@ const PortfolioPage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
+      style={{ position: "relative" }}
     >
       <div
         className="h-[600vh] relative"
@@ -44,10 +45,11 @@ const PortfolioPage = () => {
                   <div className="relative w-80 h-56 md:w-96 md:h-64
                   lg:w-[480px] lg:h-[350px] xl:w-[600px] xl:h-[400px]">
                     <Image
-                      src={item.img} alt={item.title}
-                      fill priority
+                      src={item.img}
+                      alt={item.title}
+                      fill
+                      priority
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      layout="fill"
                       objectFit="contain"
                     />
                   </div>
