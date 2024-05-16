@@ -26,10 +26,10 @@ const items = [
   {
     id: 4,
     color: "from-orange-300 to-red-300", // Changed color
-    title: "Vite: 3D Portfolio App",
-    desc: "A 3D Portfolio App built with Vite, React, and Three.js. This project showcases a 3D model of a landscape with a rotating camera. The project is deployed on Vercel.",
-    img: "/Vite-Portfolio.png",
-    link: "https://3d-portfolio-black-rho.vercel.app/",
+    title: "A financial app landing page",
+    desc: "A fully responsive financial app landing page using React JS and Tailwind CSS.",
+    img: "/hero-girl.png",
+    link: "https://kobodrop-app.netlify.app/",
   },
 ];
 
